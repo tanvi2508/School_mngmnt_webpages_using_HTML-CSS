@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN_LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="css/adminlogin.css">
+</head>	
+<body>
+	<div class="hero">
+		<ul>
+			<li ><a href="firstpage.html">Home</a></li>
+			<li><a href="#">Admin_Login</a></li>
+			<li><a href="contact1.html">Contact</a></li>
+			<li><a href="about.html">About Us</a></li>
+		    <li><a href="feedback.html">Feedback</a></li>
+		</ul>
+		<div class="Form-box">
+		<div class="Button-box">
+			<div id="btn"></div>
+		<Button type="Button" class="toggle-btn" onclick="LogIn()">Log In</Button>
+		<Button type="Button" class="toggle-btn"  onclick="Register()">Register</Button>
+	</div>
+	<div class="social-icons">
+		<img src="fb.png">
+	    <img src="twit.png">
+	    <img src="google.png">
+	    </div>
+	    <form  id="LogIn" class="input-group">
+	    	<input type="text" class="input-field" placeholder="User Id" required>
+			<input type="password" class="input-field" placeholder="Enter Password" required>
+	    	<input type="checkbox" class="checkbox"><span>Remember Password</span>
+	    	<button type="submit" class="submit-btn"> Log In</button>
+	    </form>
+
+	    <form id="Register" class="input-group">
+	    	<input type="text" class="input-field" placeholder="User Id" required>
+	    	<input type="email" class="input-field" placeholder="Email Id" required>
+	    	<input type="password" class="input-field" placeholder="Enter Password" required>
+	    	<input type="checkbox" class="checkbox"><span>I agree to the terms and condition</span>
+	    	<button type="submit" class="submit-btn"> Register</button>
+	    </form>
+</div>
+
+</div>
+<script>
+	var x= document.getElementById("LogIn");
+	var y= document.getElementById("Register");
+	var z= document.getElementById("btn");
+
+	function Register(){
+		x.style.left="-400px";
+		y.style.left="50px";
+		z.style.left="110px";
+	}
+
+	function LogIn(){
+		x.style.left="50px";
+		y.style.left="450px";
+		z.style.left="0px";
+	}
+	
+
+</script>
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+</body>
+</html>
